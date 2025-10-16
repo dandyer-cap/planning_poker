@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>brands/linkedin/colour</title>
+    <g id="V4.0-Brand-Guidelines" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconmonstr-linkedin-3">
+            <path d="M38,0 L10,0 C4.478,0 0,4.478 0,10 L0,38 C0,43.522 4.478,48 10,48 L38,48 C43.524,48 48,43.522 48,38 L48,10 C48,4.478 43.524,0 38,0 Z" id="Shape" fill="#2867B2"></path>
+            <polygon id="Path" fill="#FFFFFF" points="16 36 10 36 10 16 16 16"></polygon>
+            <path d="M13,14 C11.344,14 10,12.6564626 10,11 C10,9.34353741 11.344,8 13,8 C14.656,8 16,9.34353741 16,11 C16,12.6564626 14.6577143,14 13,14 Z" id="Path" fill="#FFFFFF"></path>
+            <path d="M38,36 L32.6,36 L32.6,25.8111879 C32.6,19.6877191 25.4,20.1513428 25.4,25.8111879 L25.4,36 L20,36 L20,16.0005473 L25.4,16.0005473 L25.4,19.2095504 C27.9128,14.5078609 38,14.1605977 38,23.7112454 L38,36 Z" id="Path" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>
