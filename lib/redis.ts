@@ -42,7 +42,7 @@ export async function updateRoom(roomId: string, state: GameState): Promise<void
 
 export async function addPlayer(roomId: string, player: Player): Promise<GameState> {
   let room = await getRoom(roomId);
-  
+
   if (!room) {
     room = await createRoom(roomId);
   }
@@ -50,9 +50,11 @@ export async function addPlayer(roomId: string, player: Player): Promise<GameSta
   // Update existing player or add new one
   const existingIndex = room.players.findIndex(p => p.id === player.id);
   if (existingIndex >= 0) {
-    room.players[existingIndex] = player;
+    // Update existing player with fresh lastSeen
+    room.players[existingIndex] = { ...player, lastSeen: Date.now() };
   } else {
-    room.players.push(player);
+    // Add new player with current lastSeen
+    room.players.push({ ...player, lastSeen: Date.now() });
   }
 
   await updateRoom(roomId, room);

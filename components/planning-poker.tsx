@@ -62,16 +62,19 @@ export default function PlanningPoker() {
   useEffect(() => {
     if (!roomId) return
 
+    console.log('Setting up polling for room:', roomId)
+
     // Initial fetch
     fetchRoomState()
 
     // Setup polling
     const pollInterval = setInterval(fetchRoomState, POLL_INTERVAL)
-    
+
     // Setup heartbeat
     const heartbeatInterval = setInterval(sendHeartbeat, HEARTBEAT_INTERVAL)
 
     return () => {
+      console.log('Cleaning up polling for room:', roomId)
       clearInterval(pollInterval)
       clearInterval(heartbeatInterval)
     }
